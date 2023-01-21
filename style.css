@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(bd.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1280px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: black;
+  border-radius: 15px;
+  margin-top: 10px;
+  position: sticky;
+  top: 10px;
+}
+header .wrap-left {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  width: 40px;
+  height: 40px; 
+  background-image: url(man.jpeg);
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover ;
+  cursor: pointer;
+}
+header .brand {
+  height: 40px;
+  width: 90px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  cursor: pointer;
+}
+header .brand h3 {
+  color: white;
+  font-size: 32px;
+}
+header input[type="search"] {
+  height: 35px;
+  width: 300px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgb(233, 5, 5);
+  color: rgb(255, 0, 0);
+}
+header input:focus {
+  outline: none;
+}
+.wrap-right {
+  display: flex;
+  align-items: center;
+  margin-left: 37%;                                                                                                                                %;
+} 
+.wrap-right .btn-login {
+  border-width: 1px;
+  border-color: rgb(247, 6, 6);
+  background-color: rgb(252, 3, 3);
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb(253, 253, 253);
+  font-weight: bold;
+  margin-right: 15px;
+}
+.wrap-right .btn-create {
+  border-width: 1px;
+  border-color: rgb(247, 6, 6);
+  background-color: rgb(252, 3, 3);
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb(253, 253, 253);
+  font-weight: bold;
+}
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+}
+.content-left {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  margin-right: 16px;
+}
+.content-left .box-left {
+  height: 300px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: black;
+}
+.content-left .box-left img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 25px;
+}
+
+.content-left .box-left h5 {
+  font-size: medium;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+.content-left .box-left h5 span {
+  font-weight: 100;
+  font-size: medium;
+}
+
+.content-left .box-left p {
+  font-weight: 100;
+  font-size: small;
+  color: black;
+  text-align: justify;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+  color: #fff;
+}
+.box-menu {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.content-center {
+  flex: 3;
+  height: 100%;
+  width: 100%;
+}
+.content-center .list-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.content-center .list-menu li {
+  list-style: none;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.content {
+  height: 100%;
+  width: 100%;
+}
+.content .image {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  height: 300px;
+  width: 100%;
+}
+.content .card {
+  height: 200px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 16px;
+}
+.content .card .wrap-profile {
+  display: flex;
+  flex-direction: row;
+}
+.content .card .wrap-profile .profile-img {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50px;
+}
+.profile-img img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+.card h1 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 16px;
+}
+.wrap-name {
+  margin-left: 16px;
+}
+.wrap-comment {
+  display: flex;
+  align-items: center;
+}
+.wrap-comment p {
+  margin-right: 16px;
+}
+.content-right {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+.content-right .box-right {
+  height: 400px;
+  padding: 16px;
+  color: #fff;
+  border-radius: 8px;
+  background-color: black;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 768px) {
+  header input[type="search"] {
+    display: none;
+  }
+
+  header .wrap-right {
+    display: none;
+  }
+
+  main .content-left,
+  .content-right {
+    display: none;
+  }
+}
